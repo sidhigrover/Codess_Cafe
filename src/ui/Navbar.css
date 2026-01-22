@@ -75,6 +75,8 @@ nav {
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
     padding: 40px 0 0 10px;
     transition: 0.3s ease-in-out;
+    overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   }
   #navbar li a.hire-talent-btn{
     margin-left: -5px;
