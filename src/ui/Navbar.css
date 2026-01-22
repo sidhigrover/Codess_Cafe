@@ -1,0 +1,140 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: black ;
+  height: 100px;
+  padding: 0 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  position: fixed;
+  width:100%;
+  z-index: 100;
+}
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 10px;
+  position: relative;
+
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-family:  Montserrat,sans-serif;
+  font-weight: 100;
+  color: #daedf9;
+  transition: 0.3s ease-in-out;
+
+}
+#navbar li a:hover,
+#navbar li a.active {
+  color: white;
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: white;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+#mobile {
+  display: none;
+}
+
+#mobile i {
+  color: #daedf9;
+  align-items: center;
+}
+
+@media screen and (max-width: 1050px) {
+  
+
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 100px;
+    right: -300px;
+    width: 200px;
+    height: 100vh;
+    background: black;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 40px 0 0 10px;
+    transition: 0.3s ease-in-out;
+  }
+  #navbar li a.hire-talent-btn{
+    margin-left: -5px;
+  
+  }
+
+  #navbar.active {
+    right: 0px;
+  }
+
+  #navbar li {
+    margin-bottom: 25px;
+  }
+
+  #mobile {
+    display: block;
+  }
+
+  #mobile i {
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+ 
+}
+
+/* =========================
+   HIRE TALENT WHITE BUTTON
+   ========================= */
+
+   #navbar li a.hire-talent-btn {
+    background: white;
+    color: black !important;
+    padding: 10px 22px;
+    border-radius: 14px;
+    font-weight: 500;
+    line-height: 1;
+    transition: all 0.3s ease;
+  }
+  
+  /* hover */
+  #navbar li a.hire-talent-btn:hover {
+    background: #f1f1f1;
+    color: black !important;
+    transform: translateY(-1px);
+  }
+  
+  /* REMOVE underline animation */
+  #navbar li a.hire-talent-btn::after {
+    content: none !important;
+  }
+
+
+  @media screen and (max-width: 348px) { 
+   
+      #mobile i {
+        color: #daedf9;
+        position: relative;
+        right:3em;
+       
+      }
+
+  }
