@@ -193,4 +193,12 @@ background: #F9FAFB;
   font-size: 1.7rem;
 
   }
+  .step-content h3{
+    font-size: 1rem;
+
+  }
+  .step-content p{
+
+    font-size: 0.75rem;
+  }
 }
