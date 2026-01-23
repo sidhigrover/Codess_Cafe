@@ -188,4 +188,9 @@ background: #F9FAFB;
   .pipeline-step {
     gap: 1.5rem;
   }
+
+  .pipeline-title {
+  font-size: 1.7rem;
+
+  }
 }
