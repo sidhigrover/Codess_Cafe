@@ -1,0 +1,90 @@
+.auto-scroll-section {
+  background: #FDECEC;
+  padding: 100px 0;
+  overflow: hidden;
+  text-align: center;
+
+}
+
+.auto-title {
+  font-size: 2.5rem;
+  color: #C97C8A;
+  margin-bottom: 100px;
+}
+
+.auto-title em {
+  font-style: italic;
+}
+
+/* OVAL CARD */
+.company-oval {
+  width: 360px;
+  height: 200px;
+  border: 2px solid #C97C8A;
+  border-radius: 50%;
+  padding: 30px;
+  color: #C97C8A;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.4s ease;
+}
+
+.company-oval img {
+  height: 55px;
+  margin-bottom: 12px;
+  object-fit: contain;
+}
+
+.company-oval h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.company-oval p {
+  font-size: 0.9rem;
+  opacity: 0.75;
+  margin-top: 6px;
+}
+
+
+@media (max-width: 768px) {
+
+
+.company-oval{
+
+    width: 300px;
+  height: 140px;
+
+}
+.auto-title {
+font-size: 2rem;
+
+}
+}
+
+
+@media (max-width: 500px) {
+
+
+.company-oval{
+
+    width: 230px;
+  height: 120px;
+
+}
+.auto-title {
+font-size: 1.7rem;
+
+}
+}
+
+@media (max-width: 284px) {
+
+  .auto-title {
+font-size: 1.5rem;
+
+}
+}
+
