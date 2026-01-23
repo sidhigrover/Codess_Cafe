@@ -1,9 +1,9 @@
 import uber from "../assets/uber.jpeg";
 import atlassian from "../assets/atlassian.png";
 import myntra from "../assets/myntra.svg";
-import flipkart from "../assets/flipkart-Logo.svg";
 import rubrik from "../assets/rubrik.png";
 import airtel from "../assets/airtel.png";
+import intuit from "../assets/intuit.png";
 
 
 export const companies = [
@@ -36,8 +36,8 @@ export const companies = [
     logo: myntra,
   },
   {
-    name: "Flipkart",
-    logo: flipkart,
+    name: "Intuit",
+    logo: intuit,
   },
   {
     name: "Google",

@@ -7,7 +7,6 @@ import pipeline from "../api/pipeline.json";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/react-splide/css/core";
-import "../ui/OurProgram.css";
 import {companies} from  "../data/companies.js";
 
 
