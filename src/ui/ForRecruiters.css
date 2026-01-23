@@ -205,7 +205,7 @@ background: #F9FAFB;
 .auto-title {
   font-size: 2.5rem;
   color: #E6396B;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 .auto-title em {
@@ -283,6 +283,73 @@ font-size: 1.7rem;
 font-size: 1.5rem;
 
 }
+}
+
+.hire-below {
+  max-width: 900px;
+  margin: 56px auto 0;
+  padding: 0 16px;
+  text-align: center;
+}
+
+/* Heading */
+.hire-below h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #E6396B;
+  margin-bottom: 14px;
+    font-weight: 600;
+}
+
+/* Description */
+.hire-below p {
+  font-size: clamp(0.8rem, 3.5vw, 1.1rem);
+  color: #E6396B;
+  line-height: 1.8;
+  max-width: 760px;
+  margin: 0 auto;
+    font-weight: 500;
+}
+
+/* Highlight text */
+.hire-below span,
+.hire-below strong {
+  color: white;
+  font-weight: 500;
+}
+
+/* Subtle visual separation from carousel */
+@media (min-width: 768px) {
+  .hire-below {
+    margin-top: 64px;
+  }
+}
+
+.hire-btn {
+  margin-top: 28px;
+  padding: 14px 36px;
+  border-radius: 999px;
+  border: none;
+  background-color: white;
+  color: #E6396B;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* Hover effect */
+.hire-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px #fbabc2;
+}
+
+/* Mobile tuning */
+@media (max-width: 480px) {
+  .hire-btn {
+    padding: 12px 28px;
+    font-size: 15px;
+  }
 }
 
 

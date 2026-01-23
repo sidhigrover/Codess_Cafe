@@ -93,7 +93,26 @@ const ForRecruiters = () => {
         ))}
       </Splide>
 
+     <div className="hire-below">
+  <h3>Ready to hire exceptional talent?</h3>
+  <p>
+    Fill out the <span>Hire Talent</span> form below to get started.
+   Our team will review your requirements and connect you with
+   <strong> top women engineering talent</strong>.
+  </p>
+  <div><a
+    href="https://docs.google.com/forms/d/e/1FAIpQLSfCnNgK1AIyApA_n7k_QI4FbDHIx1gTpXnmAmHr7DzJvbBUaA/viewform"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+   <button className="hire-btn">Hire Talent</button>
+   </a></div>
+</div>
+
+
     </div>
+
+   
   
     </>
   );
