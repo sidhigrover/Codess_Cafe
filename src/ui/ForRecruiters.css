@@ -303,7 +303,7 @@ font-size: 1.5rem;
 
 /* Description */
 .hire-below p {
-  font-size: clamp(0.7rem, 3.5vw, 1.1rem);
+  font-size: clamp(0.7rem, 3vw, 1rem);
   color: #4A4A4A;
   line-height: 1.8;
   max-width: 760px;
