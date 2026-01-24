@@ -303,7 +303,7 @@ font-size: 1.5rem;
 
 /* Description */
 .hire-below p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #4A4A4A;
   line-height: 1.8;
   max-width: 760px;
@@ -346,9 +346,9 @@ font-size: 1.5rem;
   box-shadow: 0 12px 24px #fbabc2;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
   .hire-below p {
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   max-width: 750px;
 
 }
@@ -358,7 +358,7 @@ font-size: 1.5rem;
 @media (max-width: 480px) {
  
   .hire-below p {
-  font-size: 0.9rem;
+  font-size: 0.6rem;
   max-width: 450px;
 
 }
