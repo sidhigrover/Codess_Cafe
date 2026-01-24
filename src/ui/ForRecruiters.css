@@ -303,7 +303,7 @@ font-size: 1.5rem;
 
 /* Description */
 .hire-below p {
-  font-size: clamp(0.7rem, 2.5vw, 1rem);
+  font-size: 1.3rem;
   color: #4A4A4A;
   line-height: 1.8;
   max-width: 760px;
@@ -323,6 +323,8 @@ font-size: 1.5rem;
   .hire-below {
     margin-top: 64px;
   }
+  /* Description */
+
 }
 
 .hire-btn {
@@ -344,13 +346,24 @@ font-size: 1.5rem;
   box-shadow: 0 12px 24px #fbabc2;
 }
 
+@media (max-width: 770px) {
+  .hire-below p {
+  font-size: 1rem;
+  max-width: 750px;
+
+}
+}
+
 /* Mobile tuning */
 @media (max-width: 480px) {
-  .hire-btn {
-    padding: 12px 28px;
-    font-size: 15px;
-  }
+ 
+  .hire-below p {
+  font-size: 0.9rem;
+  max-width: 450px;
+
 }
+}
+
 
 
 
