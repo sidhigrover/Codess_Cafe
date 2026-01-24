@@ -297,25 +297,25 @@ font-size: 1.5rem;
   font-size: 1.6rem;
   font-weight: 700;
   color: #E6396B;
-  margin-bottom: 14px;
+  margin-bottom: 1.5rem;
     font-weight: 600;
 }
 
 /* Description */
 .hire-below p {
   font-size: clamp(0.8rem, 3.5vw, 1.1rem);
-  color: #E6396B;
+  color: #4A4A4A;
   line-height: 1.8;
   max-width: 760px;
   margin: 0 auto;
-    font-weight: 500;
+    
 }
 
 /* Highlight text */
 .hire-below span,
 .hire-below strong {
-  color: white;
-  font-weight: 500;
+  color: #E6396B;
+  font-weight: 600;
 }
 
 /* Subtle visual separation from carousel */
