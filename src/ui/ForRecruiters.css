@@ -348,7 +348,7 @@ font-size: 1.5rem;
 
 @media (max-width: 768px) {
   .hire-below p {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   max-width: 750px;
 
 }
@@ -358,7 +358,7 @@ font-size: 1.5rem;
 @media (max-width: 480px) {
  
   .hire-below p {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   max-width: 450px;
 
 }
