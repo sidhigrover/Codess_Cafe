@@ -12,7 +12,7 @@
 .program-title {
   font-size: 36px;
   font-weight: 700;
-  margin-bottom: 16px;
+  margin-bottom: 19px;
   color: #222;
 }
 
@@ -102,7 +102,7 @@
 
    .our-program {
 
-padding-top: 9rem;
+  padding-top: 7.5rem;
 
   }
   .prepare-grid {
@@ -111,7 +111,7 @@ padding-top: 9rem;
   }
 
   .program-title {
-    font-size: 24px;
+    font-size: 2rem;
   }
 
   .prepare-title {
