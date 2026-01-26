@@ -1,0 +1,141 @@
+/* Container */
+.our-program {
+  padding: 60px 0px;
+  max-width: 100%;
+  text-align: center;
+  background: #F9FAFB;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+/* Main Heading */
+.program-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+/* Description */
+.program-description {
+  font-size: 18px;
+  color: #555;
+  max-width: 820px;
+  margin: 0 auto 50px auto;
+  line-height: 1.7;
+}
+
+/* Sub Heading */
+.prepare-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #5483cc;
+}
+
+/* Grid */
+.prepare-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+}
+
+/* Card */
+.prepare-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+
+/* Text */
+.prepare-card p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  max-width: 200px;
+}
+
+/* =========================
+   RESPONSIVE BREAKPOINTS
+   ========================= */
+
+/* Tablets (≤ 1024px) */
+@media (max-width: 1024px) {
+  .prepare-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .program-title {
+    font-size: 32px;
+  }
+
+  .prepare-title {
+    font-size: 26px;
+  }
+}
+
+/* Large Phones (≤ 768px) */
+@media (max-width: 768px) {
+
+ 
+  
+  .program-title {
+    font-size: 28px;
+  }
+
+  .program-description {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .prepare-title {
+    font-size: 24px;
+  }
+
+}
+
+/* Small Phones (≤ 480px) */
+@media (max-width: 480px) {
+
+   .our-program {
+
+padding-top: 9rem;
+
+  }
+  .prepare-grid {
+    grid-template-columns: 1fr;
+
+  }
+
+  .program-title {
+    font-size: 24px;
+  }
+
+  .prepare-title {
+    font-size: 22px;
+  }
+
+  .program-description {
+    font-size: 15px;
+  }
+
+  .prepare-card p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 830px) {
+
+   .program-description {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+
+
+
+}
+
