@@ -65,7 +65,7 @@ const ForRecruiters = () => {
 
        <div className="auto-scroll-section">
       <h1 className="auto-title">
-        Companies <br /> Where our Mentees <br/> <em>Placed</em>
+        Our 2500+ Alumni <br/> <em>Are Everywhere</em>
       </h1>
 
       <Splide
