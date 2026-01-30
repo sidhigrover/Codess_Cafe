@@ -30,14 +30,17 @@
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 40px;
-  color: #5483cc;
+  color: #0c9cfb;
 }
 
 /* Grid */
 .prepare-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-
+  grid-template-columns: repeat(4, 1fr);  
+ max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: clamp(16px, 4vw, 32px);
+  
 }
 
 /* Card */
@@ -46,17 +49,22 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+   padding: 10px;
+
 }
 
 
 /* Text */
 .prepare-card p {
   font-size: 16px;
-  font-weight: 500;
-  color: #333;
+  font-weight: 600;
+  color: #0c9cfb;
   max-width: 200px;
 }
+
+ .meethi img {
+    width: 70px;
+  }
 
 /* =========================
    RESPONSIVE BREAKPOINTS
@@ -75,6 +83,12 @@
   .prepare-title {
     font-size: 26px;
   }
+  .prepare-card {
+   padding-bottom: 50px;
+
+}
+
+
 }
 
 /* Large Phones (≤ 768px) */
@@ -133,9 +147,19 @@
     margin-left: 10px;
     margin-right: 10px;
   }
+  .prepare-title {
+      margin-left: 5px;
+    margin-right: 5px;
+  }
 
 
 
 
 }
+
+
+
+
+
+
 
