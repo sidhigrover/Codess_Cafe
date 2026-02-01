@@ -1,7 +1,6 @@
 /* Container */
 .our-program {
   padding: 60px 0px;
-  max-width: 100%;
   text-align: center;
   background: #F9FAFB;
   padding-top: 7rem;
@@ -59,7 +58,7 @@
   font-size: 16px;
   font-weight: 600;
   color: #0c9cfb;
-  max-width: 200px;
+  max-width: 180px;
 }
 
  .meethi img {
