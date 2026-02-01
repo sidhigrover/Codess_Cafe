@@ -36,8 +36,8 @@
 /* Grid */
 .prepare-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);  
- max-width: 1280px;
+  grid-template-columns: repeat(4, 1fr); 
+  max-width: 1280px; 
   margin-inline: auto;
   padding-inline: clamp(16px, 4vw, 32px);
   
@@ -158,8 +158,74 @@
 }
 
 
+/* =====================
+   OUR PROJECTS
+===================== */
+.project-title {
+font-size: clamp(1.4rem, 2.7vw, 1.75rem);
+  font-weight: 600;
+  color: #0c9cfb;
+  margin-top: 50px;
+  margin-bottom: 25px;   /* space before cards */
+}
 
 
 
+/* GRID */
+.projects-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+  gap: 24px;
+}
+
+/* CARD */
+.projects-card {
+  background: #fff;
+  border: 1px solid #6cbcdb26;
+  border-radius: 16px;
+  padding: 30px 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+@media (hover: hover) {
+  .projects-card:hover {
+    box-shadow: 0 10px 30px #85e5ea;
+    transform: scale(1.02);
+  }
+}
+@media (hover: none) {
+  .projects-card:active {
+    box-shadow: 0 10px 30px  #85e5ea;
+    transform: scale(1.02);
+  }
+}
+
+@media (max-width: 1250px) {
+  .projects-grid {
+     max-width: 900px;
+  }
+}
+
+@media (max-width: 915px) {
+
+  .projects-grid {
+     max-width: 300px;
+       grid-template-columns: 1fr;
+  }
+ 
+}
+
+
+@media (max-width: 330px) {
+
+  .projects-grid {
+     max-width: 250px;
+       grid-template-columns: 1fr;
+  }
+ 
+}
 
 

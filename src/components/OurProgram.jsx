@@ -1,11 +1,13 @@
-
 import "../ui/OurProgram.css";
 
 import {programData} from  "../data/program.js";
+import { projectsData } from "../data/program.js";
 
 const OurProgram = () => {
   return (
-    <section className="our-program">
+
+        
+    <div className="our-program">
       {/* Heading */}
       <h2 className="program-title">Our Program</h2>
 
@@ -29,7 +31,34 @@ const OurProgram = () => {
           </div>
         ))}
       </div>
-    </section>
+
+
+      {/* ===================== */}
+      {/* OUR PROJECTS SECTION */}
+      {/* ===================== */}
+
+       <h2 className="project-title">Our Projects</h2>
+
+
+  
+
+      <div className="projects-grid">
+        {projectsData.map((item, index) => (
+          <div className="projects-card" key={index} data-aos="fade-up">
+           <div className="meethi">
+              <img src={item.img} alt={item.alt} />
+            </div>
+            <h3>{item.title}</h3>
+            <p>{item.lead}</p>
+          </div>
+        ))}
+      </div>
+
+      
+
+
+</div>
+   
   );
 };
 
