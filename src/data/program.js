@@ -4,6 +4,7 @@ import scholarship from "../assets/scholarship.png";
 import progress from "../assets/progress.png";
 import ai from "../assets/ai.png";
 import programming from "../assets/programming.png";
+import opensource from "../assets/opensource.png";
 
 export const programData = [
   {
@@ -43,7 +44,7 @@ export const projectsData = [
   },
   {
     id: 2,
-    img:"https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-open-source-mobile-app-development-flaticons-lineal-color-flat-icons.png",
+    img: opensource,
     alt: "open source",
     title: "OSS Cohort",
     lead: "Program Led By Jyoti Bhist",
