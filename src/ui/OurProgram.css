@@ -165,9 +165,14 @@ font-size: clamp(1.5rem, 2.7vw, 1.75rem);
   font-weight: 600;
   color: #0c9cfb;
   margin-top: 50px;
-  margin-bottom: 25px;   /* space before cards */
+  margin-bottom: 25px;   
 }
 
+.projects-card p {
+  font-size: 14px;
+  margin-top: 4px;
+  
+}
 
 
 /* GRID */
@@ -176,7 +181,6 @@ font-size: clamp(1.5rem, 2.7vw, 1.75rem);
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  
   gap: 24px;
 }
 
@@ -225,6 +229,9 @@ font-size: clamp(1.5rem, 2.7vw, 1.75rem);
        grid-template-columns: 1fr;
   }
  
+
+
+
 }
 
 
