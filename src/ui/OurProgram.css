@@ -162,7 +162,7 @@
    OUR PROJECTS
 ===================== */
 .project-title {
-font-size: clamp(1.4rem, 2.7vw, 1.75rem);
+font-size: clamp(1.5rem, 2.7vw, 1.75rem);
   font-weight: 600;
   color: #0c9cfb;
   margin-top: 50px;
