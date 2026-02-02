@@ -1,0 +1,166 @@
+/* ================= ACHIEVEMENTS ================= */
+.achievements {
+  padding: clamp(3rem, 6vw, 5rem) clamp(1rem, 4vw, 2rem);
+  background: #FDECEC;
+  text-align: center;
+}
+
+.ach-title {
+  font-size: clamp(1.25rem, 3vw, 1.9rem);
+  color: #ec407a;
+  font-weight: 700;
+  margin-bottom: clamp(2rem, 5vw, 3rem);
+}
+
+/* ================= STATS GRID ================= */
+.stats-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(16px, 3vw, 24px);
+}
+
+/* ================= CARD ================= */
+.stat-card {
+  background: #fff;
+  border: 1px solid #fee4ec;
+  border-radius: 16px;
+  padding: clamp(20px, 4vw, 30px) clamp(16px, 3vw, 20px);
+  transition: all 0.3s ease;
+  font-weight: 600;
+  color: #ec407a;
+  font-size: clamp(1rem, 2.4vw, 1.4rem);
+}
+
+@media (hover: hover) {
+  .stat-card:hover {
+    box-shadow: 0 10px 30px #fbabc2;
+    transform: scale(1.03);
+  }
+}
+
+@media (hover: none) {
+  .stat-card:active {
+    box-shadow: 0 10px 30px #fbabc2;
+    transform: scale(1.03);
+  }
+}
+
+.stat-card span {
+  display: block;
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
+  font-weight: 400;
+  color: #555;
+  margin-top: 0.4rem;
+}
+
+/* ================= GRAPHS ================= */
+.graphs-grid {
+  margin-top: clamp(3rem, 6vw, 4rem);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(1.5rem, 4vw, 2rem);
+}
+
+canvas {
+  background: #fff;
+  padding: clamp(1rem, 4vw, 1.5rem);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(236, 64, 122, 0.15);
+}
+
+/* ================= BREAKPOINTS ================= */
+
+/* Tablet */
+@media (max-width: 1250px) {
+  .stats-grid {
+     max-width: 900px;
+  }
+}
+
+@media (max-width: 915px) {
+
+  .stats-grid {
+     max-width: 200px;
+       grid-template-columns: 1fr;
+  }
+ 
+}
+
+
+@media (max-width: 500px) {
+
+  .stats-grid {
+     max-width: 170px;
+    
+  }
+ 
+
+
+
+}
+
+/* ================= GRAPHS ================= */
+.graphs-grid {
+  margin-top: 4rem;
+  max-width: 1200px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.graph-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 20px;
+
+}
+
+.graph-card h3 {
+  font-size: 1rem;
+  color: #ec407a;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+
+
+canvas {
+  width: 100% !important;
+  height: 260px !important;
+}
+
+@media (max-width: 1250px) {
+  .graphs-grid {
+     max-width: 910px;
+  }
+  canvas {
+
+  height: 200px !important;
+}
+}
+
+@media (max-width: 915px) {
+
+  .graphs-grid {
+     max-width: 300px;
+       grid-template-columns: 1fr;
+  }
+ 
+}
+
+@media (max-width: 350px) {
+
+  .graphs-grid {
+     max-width: 250px;
+      
+  }
+  canvas {
+
+  height: 150px !important;
+}
+}
+
+
