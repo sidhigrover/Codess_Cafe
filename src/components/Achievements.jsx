@@ -44,7 +44,6 @@ const hoverOptionsy = {
   interaction: {
     mode: "nearest",
     intersect: false,
-    axis: "xy",
   },
 };
 
