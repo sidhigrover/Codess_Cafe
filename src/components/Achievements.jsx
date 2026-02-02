@@ -129,7 +129,7 @@ const Achievements = () => {
 
       <div className="stats-grid">
         {statsData.map((item, index) => (
-          <div className="stat-card" key={index}>
+          <div className="stat-card" key={index} data-aos="zoom-in" data-aos-duration="700">
             <h3>{counts[index]}{item.suffix}</h3>
             <span>{item.label}</span>
           </div>
