@@ -5,7 +5,7 @@ import Chart from "chart.js/auto";
 
 const Achievements = () => {
   const sectionRef = useRef(null);
-  const [counts, setCounts] = useState(statsData.map(() => 0));
+  const [counts, setCounts] = useState(statsData.map(() => 10));
   const [hasStarted, setHasStarted] = useState(false);
 
   const yearChartRef = useRef(null);
