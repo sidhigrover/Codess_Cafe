@@ -20,7 +20,7 @@ const hoverOptions = {
   },
   interaction: {
     mode: "nearest",
-    intersect: true,
+    intersect: false,
   },
 };
 
@@ -43,7 +43,7 @@ const hoverOptionsy = {
   },
   interaction: {
     mode: "nearest",
-    intersect: true,
+    intersect: false,
   },
 };
 
@@ -125,7 +125,7 @@ const Achievements = () => {
         },
          interaction: {
     mode: "nearest",
-    intersect: true,
+    intersect: false,
   },
       },
     });
