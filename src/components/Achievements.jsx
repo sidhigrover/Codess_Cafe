@@ -123,6 +123,10 @@ const Achievements = () => {
           tooltip: { enabled: true },
           legend: { position: "bottom" },
         },
+         interaction: {
+    mode: "nearest",
+    intersect: true,
+  },
       },
     });
 
