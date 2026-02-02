@@ -3,6 +3,51 @@ import "../ui/Achievements.css";
 import { statsData } from "../data/stats";
 import Chart from "chart.js/auto";
 
+const hoverOptions = {
+  responsive: true,
+  maintainAspectRatio: false,
+  plugins: {
+    tooltip: {
+      enabled: true,
+      backgroundColor: "#1e1e1e",
+      titleColor: "#fff",
+      bodyColor: "#fff",
+      cornerRadius: 6,
+    },
+    legend: {
+      display: false,
+    },
+  },
+  interaction: {
+    mode: "nearest",
+    intersect: true,
+  },
+};
+
+
+const hoverOptionsy = {
+  responsive: true,
+   indexAxis: "y",
+  maintainAspectRatio: false,
+  plugins: {
+    tooltip: {
+      enabled: true,
+      backgroundColor: "#1e1e1e",
+      titleColor: "#fff",
+      bodyColor: "#fff",
+      cornerRadius: 6,
+    },
+    legend: {
+      display: false,
+    },
+  },
+  interaction: {
+    mode: "nearest",
+    intersect: true,
+  },
+};
+
+
 const Achievements = () => {
   const sectionRef = useRef(null);
   const [counts, setCounts] = useState(statsData.map(() => 10));
@@ -11,6 +56,7 @@ const Achievements = () => {
   const yearChartRef = useRef(null);
   const campusChartRef = useRef(null);
   const companyChartRef = useRef(null);
+
 
   /* ================= COUNTER ================= */
   useEffect(() => {
@@ -43,25 +89,6 @@ const Achievements = () => {
   useEffect(() => {
     if (!hasStarted) return;
 
-    const noHoverOptions = {
-      responsive: true,
-      maintainAspectRatio: false,
-      events: [], // 🔥 disables all mouse events
-      plugins: {
-        tooltip: {
-          enabled: false, // ❌ no tooltip
-        },
-        legend: {
-          display: false,
-        },
-      },
-      scales: {
-        y: {
-          beginAtZero: true,
-        },
-      },
-    };
-
     const yearChart = new Chart(yearChartRef.current, {
       type: "bar",
       data: {
@@ -75,7 +102,7 @@ const Achievements = () => {
           },
         ],
       },
-      options: noHoverOptions,
+      options: hoverOptions,
     });
 
     const campusChart = new Chart(campusChartRef.current, {
@@ -92,9 +119,8 @@ const Achievements = () => {
       options: {
         responsive: true,
         maintainAspectRatio: false,
-        events: [], // 🔥 disables hover
         plugins: {
-          tooltip: { enabled: false },
+          tooltip: { enabled: true },
           legend: { position: "bottom" },
         },
       },
@@ -113,7 +139,7 @@ const Achievements = () => {
           },
         ],
       },
-      options: noHoverOptions,
+      options: hoverOptionsy,
     });
 
     return () => {
