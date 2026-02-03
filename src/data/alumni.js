@@ -11,7 +11,7 @@ export const alumniData = [
       "Getting the right guidance at the right time is really important and I am grateful to get is from Aarnav Jindal under this program. He not only guided me but also took mock interviews which boosted my confidence and gave me a chance to analyse and improve and He always helped me in staying positive even after rejections. Thanks Aarnav and Codess.Cafe.",
     name: "Prachi Singhal",
     role: "⭐️⭐️⭐️⭐️⭐️",
-    theme: "red",
+    theme: "blue",
   },
   {
     quote:
@@ -39,7 +39,7 @@ export const alumniData = [
       "My experience at Codess Cafe has been really inspiring and positive. It’s a supportive community where learning feels comfortable and motivating. The sessions are well-structured and practical, and I’ve gained both technical knowledge and confidence. Having a mentor makes the journey even better. They explain concepts clearly, encourage questions, and genuinely support growth. Overall, Codess Cafe feels like a safe and empowering space for learning and improving skills.",
     name: "Suman Choudhury",
     role: "⭐️⭐️⭐️⭐️⭐️",
-    theme: "red",
+    theme: "blue",
   },
 
 
