@@ -6,6 +6,7 @@ import OurProgram from "./components/OurProgram";
 import Achievements from "./components/Achievements";
 import Alumni from "./components/Alumni";
 import Preloader from "./components/Preloader";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -60,6 +61,8 @@ function App() {
           <section id="alumni">
             <Alumni />
           </section>
+
+          <Footer/>
 
         </>
       )}

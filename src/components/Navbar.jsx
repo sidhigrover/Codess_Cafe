@@ -2,6 +2,7 @@ import { Component } from "react";
 import "../ui/Navbar.css";
 import codess from "../assets/codess.svg";
 import tea from "../assets/tea.svg";
+import logo from "../assets/logo.gif"
 
 class Navbar extends Component {
   state = {
@@ -53,20 +54,9 @@ class Navbar extends Component {
     return (
       <>
         <nav>
-          {/* Logo */}
-          <object type="image/svg+xml" data={codess} />
-          
-
-          {/* Decorative Tea SVG */}
-          <object
-            type="image/svg+xml"
-            data={tea} 
-            style={{
-              position: "fixed",
-              left: "-10px",
-              top: "-50px",
-            }}
-          />
+       
+          {/* Logo GIF */}
+          <img src={logo} alt="Logo" className="logo-gif" />
 
           {/* Navbar Links */}
           <ul id="navbar" className={clicked ? "active" : ""}>
@@ -139,6 +129,7 @@ class Navbar extends Component {
               className={clicked ? "fas fa-times" : "fas fa-bars"}
             ></i>
           </div>
+          
         </nav>
       </>
     );

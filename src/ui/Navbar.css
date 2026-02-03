@@ -141,3 +141,13 @@ nav {
       }
 
   }
+
+  /* LOGO */
+.logo-gif {
+  height: 70px;          /* desktop size */
+  width: auto;           /* keep aspect ratio */
+  object-fit: contain;
+  cursor: pointer;
+}
+
+

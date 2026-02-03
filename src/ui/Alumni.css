@@ -2,6 +2,8 @@
   background: #F9FAFB;
  padding: 60px 0px;
     text-align: center;
+     padding-top: 7.9rem;
+  padding-bottom: 3rem;
 
 }
 
@@ -52,3 +54,12 @@
   opacity: 0.85;
 }
 
+
+@media (max-width: 760px) {
+
+   .alumni-section {
+
+  padding-top: 2rem;
+
+  }
+}
