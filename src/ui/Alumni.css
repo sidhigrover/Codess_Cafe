@@ -12,6 +12,7 @@
   color: #0c9cfb;
   font-weight: 700;
   margin-bottom: clamp(2rem, 5vw, 3rem);
+
 }
 
 
@@ -60,6 +61,14 @@
    .alumni-section {
 
   padding-top: 7.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 
   }
+
+  .alumni-title {
+   margin-left: 1rem;
+  margin-right: 1rem;
+
+}
 }
