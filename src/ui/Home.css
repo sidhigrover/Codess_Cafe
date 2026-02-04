@@ -4,7 +4,7 @@
  background: linear-gradient(315deg,  #85e5ea 0%, #fce9ec 50%);
     display: flex;
     align-items: center;
-    padding: 0 6%;
+    padding: 0 4%;
     color: #415275;
     font-weight:bold;
     padding-top:9rem;
@@ -12,11 +12,12 @@
     justify-content: space-between;
   gap: 4rem;
 
+
     
     
   }
   .logos img {
-  width:85px;      
+  width:70px;      
   height: auto;     
   object-fit: contain;
 }
@@ -102,7 +103,7 @@
 }
 
 .hero-animation img {
- width:350px;
+ width: 500px;
   max-width: 100%;
   height: auto;
   
@@ -128,7 +129,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .hero {
       padding: 8rem 5%;
       text-align: center;
@@ -158,10 +159,10 @@
   }
     
   .logos img {
-    width: 65px;
+    width: 55px;
   }
   .hero-animation img {
-    width: 200px;
+    width: 400px;
   }
 
 
@@ -189,7 +190,7 @@
 @media (min-width: 1500px)
   {
     .hero{
-    padding: 0 20%;
+    padding: 0 10%;
     padding-top:9rem;
     padding-bottom:3rem;
   }}
