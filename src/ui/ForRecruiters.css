@@ -1,11 +1,9 @@
 .recruiter-section {
   padding: 0 6%;
   text-align: center;
-background: #F9FAFB;
-    padding-top:9rem;
-     padding-bottom:3rem;
-     
-    
+  background: #f9fafb;
+  padding-top: 9rem;
+  padding-bottom: 3rem;
 }
 
 .main-title {
@@ -21,17 +19,15 @@ background: #F9FAFB;
   margin-bottom: 35px;
 }
 
-/* GRID */
 .card-grid {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  
+
   gap: 24px;
 }
 
-/* CARD */
 .feature-card {
   background: #fff;
   border: 1px solid #6cbcdb26;
@@ -48,12 +44,10 @@ background: #F9FAFB;
 }
 @media (hover: none) {
   .feature-card:active {
-    box-shadow: 0 10px 30px  #85e5ea;
+    box-shadow: 0 10px 30px #85e5ea;
     transform: scale(1.02);
   }
 }
-
-
 
 .icon {
   font-size: 36px;
@@ -62,7 +56,7 @@ background: #F9FAFB;
 
 .feature-card h3 {
   font-size: 1.15rem;
-  color:#0c9cfb;
+  color: #0c9cfb;
   margin-bottom: 10px;
   font-weight: 400;
 }
@@ -73,17 +67,13 @@ background: #F9FAFB;
   line-height: 1.6;
 }
 
-/* ---------- RECRUITER RESPONSIVE ---------- */
-
-/* Tablet */
 @media (max-width: 1024px) {
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
-     max-width: 600px;
+    max-width: 600px;
   }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
   .main-title {
     font-size: 2rem;
@@ -95,14 +85,9 @@ background: #F9FAFB;
 
   .card-grid {
     grid-template-columns: 1fr;
-     max-width: 300px;
+    max-width: 300px;
   }
- 
 }
-
-/* ===============================
-   HIRING PIPELINE
-================================ */
 
 .pipeline-title {
   font-size: 2.2rem;
@@ -117,10 +102,9 @@ background: #F9FAFB;
   margin: 0 auto;
   position: relative;
   padding-left: 2px;
-  text-align: left; /* important: overrides center */
+  text-align: left;
 }
 
-/* Vertical line */
 .pipeline::before {
   content: "";
   position: absolute;
@@ -166,10 +150,6 @@ background: #F9FAFB;
   line-height: 1.6;
 }
 
-/* ===============================
-   PIPELINE RESPONSIVE
-================================ */
-
 @media (max-width: 768px) {
   .pipeline {
     padding-left: 2px;
@@ -190,21 +170,20 @@ background: #F9FAFB;
   }
 
   .pipeline-title {
-  font-size: 1.7rem;
+    font-size: 1.7rem;
   }
 }
 
 .auto-scroll-section {
-  background: #FDECEC;
+  background: #fdecec;
   padding: 100px 0;
   overflow: hidden;
   text-align: center;
-
 }
 
 .auto-title {
   font-size: 2.5rem;
-  color: #E6396B;
+  color: #e6396b;
   margin-bottom: 60px;
 }
 
@@ -212,14 +191,13 @@ background: #F9FAFB;
   font-style: italic;
 }
 
-/* OVAL CARD */
 .company-oval {
   width: 360px;
   height: 200px;
-  border: 2px solid #E6396B;
+  border: 2px solid #e6396b;
   border-radius: 50%;
   padding: 30px;
-  color: #E6396B;
+  color: #e6396b;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -245,44 +223,30 @@ background: #F9FAFB;
   margin-top: 6px;
 }
 
-
 @media (max-width: 768px) {
-
-
-.company-oval{
-
+  .company-oval {
     width: 300px;
-  height: 140px;
-
+    height: 140px;
+  }
+  .auto-title {
+    font-size: 2rem;
+  }
 }
-.auto-title {
-font-size: 2rem;
-
-}
-}
-
 
 @media (max-width: 500px) {
-
-
-.company-oval{
-
+  .company-oval {
     width: 230px;
-  height: 120px;
-
-}
-.auto-title {
-font-size: 1.7rem;
-
-}
+    height: 120px;
+  }
+  .auto-title {
+    font-size: 1.7rem;
+  }
 }
 
 @media (max-width: 284px) {
-
   .auto-title {
-font-size: 1.5rem;
-
-}
+    font-size: 1.5rem;
+  }
 }
 
 .hire-below {
@@ -292,39 +256,32 @@ font-size: 1.5rem;
   text-align: center;
 }
 
-/* Heading */
 .hire-below h3 {
   font-size: 1.6rem;
   font-weight: 700;
-  color: #E6396B;
+  color: #e6396b;
   margin-bottom: 1.5rem;
-    font-weight: 600;
-}
-
-/* Description */
-.hire-below p {
-  font-size: 1rem;
-  color: #4A4A4A;
-  line-height: 1.8;
-  max-width: 760px;
-  margin: 0 auto;
-    
-}
-
-/* Highlight text */
-.hire-below span,
-.hire-below strong {
-  color: #E6396B;
   font-weight: 600;
 }
 
-/* Subtle visual separation from carousel */
+.hire-below p {
+  font-size: 1rem;
+  color: #4a4a4a;
+  line-height: 1.8;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.hire-below span,
+.hire-below strong {
+  color: #e6396b;
+  font-weight: 600;
+}
+
 @media (min-width: 768px) {
   .hire-below {
     margin-top: 64px;
   }
-  /* Description */
-
 }
 
 .hire-btn {
@@ -333,14 +290,13 @@ font-size: 1.5rem;
   border-radius: 999px;
   border: none;
   background-color: white;
-  color: #E6396B;
+  color: #e6396b;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.25s ease;
 }
 
-/* Hover effect */
 .hire-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 24px #fbabc2;
@@ -348,36 +304,19 @@ font-size: 1.5rem;
 
 @media (max-width: 768px) {
   .hire-below p {
-  font-size: 0.9rem;
-  max-width: 750px;
-
+    font-size: 0.9rem;
+    max-width: 750px;
+  }
 }
-}
 
-/* Mobile tuning */
 @media (max-width: 480px) {
- 
   .hire-below p {
-  max-width: 450px; 
-
-
-}
+    max-width: 450px;
+  }
 }
 
 @media (min-width: 1200px) {
-
   .hire-below p {
-
-  font-size: 1.1rem;
-
+    font-size: 1.1rem;
+  }
 }
-
-
-}
-
-
-
-
-
-
-

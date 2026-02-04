@@ -1,4 +1,3 @@
-
 export const statsData = [
   { value: 5000, label: "Community Size", suffix: "+" },
   { value: 200, label: "Companies", suffix: "+" },

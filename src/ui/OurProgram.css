@@ -1,13 +1,11 @@
-/* Container */
 .our-program {
   padding: 60px 0px;
   text-align: center;
-  background: #F9FAFB;
+  background: #f9fafb;
   padding-top: 7rem;
   padding-bottom: 3rem;
 }
 
-/* Main Heading */
 .program-title {
   font-size: 36px;
   font-weight: 700;
@@ -15,7 +13,6 @@
   color: #222;
 }
 
-/* Description */
 .program-description {
   font-size: 18px;
   color: #555;
@@ -24,7 +21,6 @@
   line-height: 1.7;
 }
 
-/* Sub Heading */
 .prepare-title {
   font-size: 28px;
   font-weight: 600;
@@ -32,26 +28,21 @@
   color: #0c9cfb;
 }
 
-/* Grid */
 .prepare-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  max-width: 1280px; 
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1280px;
   margin-inline: auto;
   padding-inline: clamp(16px, 4vw, 32px);
-  
 }
 
-/* Card */
 .prepare-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-   padding: 10px;
-
+  padding: 10px;
 }
-
 
 /* Text */
 .prepare-card p {
@@ -61,15 +52,10 @@
   max-width: 180px;
 }
 
- .meethi img {
-    width: 70px;
-  }
+.meethi img {
+  width: 70px;
+}
 
-/* =========================
-   RESPONSIVE BREAKPOINTS
-   ========================= */
-
-/* Tablets (≤ 1024px) */
 @media (max-width: 1024px) {
   .prepare-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -83,18 +69,11 @@
     font-size: 26px;
   }
   .prepare-card {
-   padding-bottom: 50px;
-
+    padding-bottom: 50px;
+  }
 }
 
-
-}
-
-/* Large Phones (≤ 768px) */
 @media (max-width: 768px) {
-
- 
-  
   .program-title {
     font-size: 28px;
   }
@@ -107,20 +86,14 @@
   .prepare-title {
     font-size: 24px;
   }
-
 }
 
-/* Small Phones (≤ 480px) */
 @media (max-width: 480px) {
-
-   .our-program {
-
-  padding-top: 7.5rem;
-
+  .our-program {
+    padding-top: 7.5rem;
   }
   .prepare-grid {
     grid-template-columns: 1fr;
-
   }
 
   .program-title {
@@ -141,41 +114,29 @@
 }
 
 @media (max-width: 830px) {
-
-   .program-description {
+  .program-description {
     margin-left: 10px;
     margin-right: 10px;
   }
   .prepare-title {
-      margin-left: 5px;
+    margin-left: 5px;
     margin-right: 5px;
   }
-
-
-
-
 }
 
-
-/* =====================
-   OUR PROJECTS
-===================== */
 .project-title {
-font-size: clamp(1.5rem, 2.7vw, 1.75rem);
+  font-size: clamp(1.5rem, 2.7vw, 1.75rem);
   font-weight: 600;
   color: #0c9cfb;
   margin-top: 50px;
-  margin-bottom: 25px;   
+  margin-bottom: 25px;
 }
 
 .projects-card p {
   font-size: 14px;
   margin-top: 4px;
-  
 }
 
-
-/* GRID */
 .projects-grid {
   max-width: 1200px;
   margin: 0 auto;
@@ -201,37 +162,27 @@ font-size: clamp(1.5rem, 2.7vw, 1.75rem);
 }
 @media (hover: none) {
   .projects-card:active {
-    box-shadow: 0 10px 30px  #85e5ea;
+    box-shadow: 0 10px 30px #85e5ea;
     transform: scale(1.02);
   }
 }
 
 @media (max-width: 1250px) {
   .projects-grid {
-     max-width: 900px;
+    max-width: 900px;
   }
 }
 
 @media (max-width: 915px) {
-
   .projects-grid {
-     max-width: 300px;
-       grid-template-columns: 1fr;
+    max-width: 300px;
+    grid-template-columns: 1fr;
   }
- 
 }
-
 
 @media (max-width: 330px) {
-
   .projects-grid {
-     max-width: 250px;
-       grid-template-columns: 1fr;
+    max-width: 250px;
+    grid-template-columns: 1fr;
   }
- 
-
-
-
 }
-
-

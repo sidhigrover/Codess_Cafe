@@ -1,7 +1,5 @@
 import { Component } from "react";
 import "../ui/Navbar.css";
-import codess from "../assets/codess.svg";
-import tea from "../assets/tea.svg";
 import logo from "../assets/logo.gif"
 
 class Navbar extends Component {
@@ -55,7 +53,7 @@ class Navbar extends Component {
       <>
         <nav>
        
-          {/* Logo GIF */}
+          {/* Codess Cafe Logo */}
           <img src={logo} alt="Logo" className="logo-gif" />
 
           {/* Navbar Links */}

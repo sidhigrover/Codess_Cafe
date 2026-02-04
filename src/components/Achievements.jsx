@@ -24,10 +24,9 @@ const hoverOptions = {
   },
 };
 
-
 const hoverOptionsy = {
   responsive: true,
-   indexAxis: "y",
+  indexAxis: "y",
   maintainAspectRatio: false,
   plugins: {
     tooltip: {
@@ -47,7 +46,6 @@ const hoverOptionsy = {
   },
 };
 
-
 const Achievements = () => {
   const sectionRef = useRef(null);
   const [counts, setCounts] = useState(statsData.map(() => 10));
@@ -57,8 +55,9 @@ const Achievements = () => {
   const campusChartRef = useRef(null);
   const companyChartRef = useRef(null);
 
-
-  /* ================= COUNTER ================= */
+  {
+    /* Counter */
+  }
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => entry.isIntersecting && setHasStarted(true),
@@ -73,10 +72,13 @@ const Achievements = () => {
     if (!hasStarted) return;
 
     const interval = setInterval(() => {
-      setCounts(prev =>
+      setCounts((prev) =>
         prev.map((num, i) =>
           num < statsData[i].value
-            ? Math.min(num + Math.ceil(statsData[i].value / 20), statsData[i].value)
+            ? Math.min(
+                num + Math.ceil(statsData[i].value / 20),
+                statsData[i].value
+              )
             : num
         )
       );
@@ -85,7 +87,9 @@ const Achievements = () => {
     return () => clearInterval(interval);
   }, [hasStarted]);
 
-  /* ================= CHARTS ================= */
+  {
+    /* Graphs */
+  }
   useEffect(() => {
     if (!hasStarted) return;
 
@@ -123,11 +127,11 @@ const Achievements = () => {
           tooltip: { enabled: true },
           legend: { position: "bottom" },
         },
-         interaction: {
-    mode: "nearest",
-    intersect: false,
-    axis: "xy",
-  },
+        interaction: {
+          mode: "nearest",
+          intersect: false,
+          axis: "xy",
+        },
       },
     });
 
@@ -157,16 +161,24 @@ const Achievements = () => {
   return (
     <section className="achievements" ref={sectionRef}>
       <h2 className="ach-title">Know More About Us</h2>
-
+      {/* Counter Section */}
       <div className="stats-grid">
         {statsData.map((item, index) => (
-          <div className="stat-card" key={index} data-aos="zoom-in" data-aos-duration="700">
-            <h3>{counts[index]}{item.suffix}</h3>
+          <div
+            className="stat-card"
+            key={index}
+            data-aos="zoom-in"
+            data-aos-duration="700"
+          >
+            <h3>
+              {counts[index]}
+              {item.suffix}
+            </h3>
             <span>{item.label}</span>
           </div>
         ))}
       </div>
-
+      {/* Alumni Section */}
       <div className="graphs-grid">
         <div className="graph-card">
           <h3>Placement Statistics</h3>

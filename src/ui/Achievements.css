@@ -1,9 +1,8 @@
-/* ================= ACHIEVEMENTS ================= */
 .achievements {
- padding: 60px 0px;
-  background: #FDECEC;
+  padding: 60px 0px;
+  background: #fdecec;
   text-align: center;
-   padding-top: 7rem;
+  padding-top: 7rem;
   padding-bottom: 3rem;
 }
 
@@ -14,7 +13,6 @@
   margin-bottom: clamp(2rem, 5vw, 3rem);
 }
 
-/* ================= STATS GRID ================= */
 .stats-grid {
   max-width: 1200px;
   margin: 0 auto;
@@ -23,7 +21,6 @@
   gap: clamp(16px, 3vw, 24px);
 }
 
-/* ================= CARD ================= */
 .stat-card {
   background: #fff;
   border: 1px solid #fee4ec;
@@ -57,7 +54,6 @@
   margin-top: 0.4rem;
 }
 
-/* ================= GRAPHS ================= */
 .graphs-grid {
   margin-top: clamp(3rem, 6vw, 4rem);
   display: grid;
@@ -72,38 +68,25 @@ canvas {
   box-shadow: 0 10px 30px rgba(236, 64, 122, 0.15);
 }
 
-/* ================= BREAKPOINTS ================= */
-
-/* Tablet */
 @media (max-width: 1250px) {
   .stats-grid {
-     max-width: 900px;
+    max-width: 900px;
   }
 }
 
 @media (max-width: 915px) {
-
   .stats-grid {
-     max-width: 200px;
-       grid-template-columns: 1fr;
+    max-width: 200px;
+    grid-template-columns: 1fr;
   }
- 
 }
-
 
 @media (max-width: 500px) {
-
   .stats-grid {
-     max-width: 170px;
-    
+    max-width: 170px;
   }
- 
-
-
-
 }
 
-/* ================= GRAPHS ================= */
 .graphs-grid {
   margin-top: 4rem;
   max-width: 1200px;
@@ -117,7 +100,6 @@ canvas {
   background: #fff;
   padding: 1.5rem;
   border-radius: 20px;
-
 }
 
 .graph-card h3 {
@@ -127,8 +109,6 @@ canvas {
   font-weight: 600;
 }
 
-
-
 canvas {
   width: 100% !important;
   height: 260px !important;
@@ -136,41 +116,31 @@ canvas {
 
 @media (max-width: 1250px) {
   .graphs-grid {
-     max-width: 910px;
+    max-width: 910px;
   }
   canvas {
-
-  height: 200px !important;
-}
+    height: 200px !important;
+  }
 }
 
 @media (max-width: 915px) {
-
   .graphs-grid {
-     max-width: 300px;
-       grid-template-columns: 1fr;
+    max-width: 300px;
+    grid-template-columns: 1fr;
   }
- 
 }
 
 @media (max-width: 350px) {
-
   .graphs-grid {
-     max-width: 250px;
-      
+    max-width: 250px;
   }
   canvas {
-
-  height: 150px !important;
+    height: 150px !important;
+  }
 }
-}
-
 
 @media (max-width: 480px) {
-
-   .achievements {
-
-  padding-top: 7.5rem;
-
+  .achievements {
+    padding-top: 7.5rem;
   }
 }

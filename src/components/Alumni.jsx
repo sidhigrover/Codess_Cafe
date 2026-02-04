@@ -2,17 +2,13 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/react-splide/css";
 import "../ui/Alumni.css";
-import {alumniData} from "../data/alumni.js";
-
-
-
+import { alumniData } from "../data/alumni.js";
 
 const Alumni = () => {
-   return (
+  return (
     <section className="alumni-section">
-         <h1 className="alumni-title">
-      Voices From Our Community
-      </h1>
+      {/* Alumni Section */}
+      <h1 className="alumni-title">Voices From Our Community</h1>
 
       <Splide
         options={{
@@ -47,7 +43,6 @@ const Alumni = () => {
       </Splide>
     </section>
   );
-  };
-  
-  export default Alumni;
-  
+};
+
+export default Alumni;

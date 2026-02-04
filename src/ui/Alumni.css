@@ -1,10 +1,9 @@
 .alumni-section {
-  background: #F9FAFB;
- padding: 60px 0px;
-    text-align: center;
-     padding-top: 7.9rem;
+  background: #f9fafb;
+  padding: 60px 0px;
+  text-align: center;
+  padding-top: 7.9rem;
   padding-bottom: 3rem;
-
 }
 
 .alumni-title {
@@ -12,9 +11,7 @@
   color: #0c9cfb;
   font-weight: 700;
   margin-bottom: clamp(2rem, 5vw, 3rem);
-
 }
-
 
 .alumni-card {
   width: 360px;
@@ -28,7 +25,6 @@
   transform: rotate(0deg) scale(1.05);
 }
 
-/* THEMES */
 .alumni-card.light {
   background: #fff8dc;
   color: #ff2d2d;
@@ -55,19 +51,13 @@
   opacity: 0.85;
 }
 
-
 @media (max-width: 760px) {
-
-   .alumni-section {
-
-  padding-top: 7.5rem;
- 
-
+  .alumni-section {
+    padding-top: 7.5rem;
   }
 
   .alumni-title {
-   margin-left: 1rem;
-  margin-right: 1rem;
-
-}
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
