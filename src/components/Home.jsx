@@ -1,6 +1,6 @@
 import "../ui/Home.css";
 import rubrik from "../assets/rubrik.png";
-import intuit from "../assets/intuit-logo.png";
+import intuit from "../assets/intuit2.png";
 import ll from "../assets/ll.png";
 
 const Home = () => {
