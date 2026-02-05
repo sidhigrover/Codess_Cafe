@@ -1,7 +1,7 @@
 import aarnav from "../assets/aarnav.png";
 import shriya from "../assets/shriya.jpeg";
 import chitra from "../assets/chitra.png";
-import mitali from "../assets/mitali.jpeg";
+import mitali from "../assets/mitali.png";
 
 export const teamData = [
   {
