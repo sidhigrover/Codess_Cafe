@@ -10,7 +10,7 @@ const Team = () => {
 
       <div className="team-row">
         {teamData.map((m, i) => (
-          <div className={`member member-${i}`} key={i}>
+          <div className="member" key={i}>
             {/* Team Section */}
             <div className="img-frame">
               {m.linkedin && (
