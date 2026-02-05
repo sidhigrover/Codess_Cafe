@@ -1,6 +1,6 @@
 import { Component } from "react";
 import "../ui/Navbar.css";
-import logo from "../assets/logo.gif"
+import logo from "../assets/logo.gif";
 
 class Navbar extends Component {
   state = {
@@ -9,8 +9,6 @@ class Navbar extends Component {
   };
 
   componentDidMount() {
-
-    
     this.syncActiveLink();
     window.addEventListener("hashchange", this.syncActiveLink);
   }
@@ -26,6 +24,7 @@ class Navbar extends Component {
       "#home": "home",
       "#for-recruiters": "recruiters",
       "#our-program": "program",
+      "#team": "team",
       "#achievements": "achievements",
       "#alumni": "alumni",
     };
@@ -52,7 +51,6 @@ class Navbar extends Component {
     return (
       <>
         <nav>
-       
           {/* Codess Cafe Logo */}
           <img src={logo} alt="Logo" className="logo-gif" />
 
@@ -85,6 +83,16 @@ class Navbar extends Component {
                 onClick={() => this.setActive("program")}
               >
                 Our Program
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#team"
+                className={activeLink === "team" ? "active" : ""}
+                onClick={() => this.setActive("team")}
+              >
+                Team
               </a>
             </li>
 
@@ -127,7 +135,6 @@ class Navbar extends Component {
               className={clicked ? "fas fa-times" : "fas fa-bars"}
             ></i>
           </div>
-          
         </nav>
       </>
     );

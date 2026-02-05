@@ -43,7 +43,7 @@ const Footer = () => {
           <i className="fab fa-twitter"></i>
         </a>
 
-        <a href="mailto:aarnavjindal1000@gmail.com">
+        <a href="mailto:team@codess.cafe">
           <i className="fa fa-envelope envelope social_icons"></i>
         </a>
 

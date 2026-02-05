@@ -1,0 +1,121 @@
+.team-wrapper {
+  padding: 60px clamp(2.1rem, 4vw, 4rem);
+  background: linear-gradient(to bottom, #ffffff 60%, #f9fafb 40%);
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.team-heading {
+  color: #0c9cfb;
+  letter-spacing: 3px;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+.team-heading span {
+  display: block;
+  margin-top: 10px;
+  font-size: clamp(2.2rem, 6vw, 3.8rem);
+  letter-spacing: clamp(4px, 2vw, 12px);
+}
+
+.team-row {
+  margin-top: clamp(3rem, 6vw, 5rem);
+  display: grid;
+  gap: clamp(2rem, 8vw, 5rem);
+  justify-content: center;
+  align-items: start;
+}
+
+@media (min-width: 1025px) {
+  .team-row {
+    grid-template-columns: repeat(4, max-content);
+  }
+}
+
+@media (max-width: 1240px) {
+  .team-row {
+    grid-template-columns: repeat(2, max-content);
+  }
+}
+
+@media (max-width: 570px) {
+  .team-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.member {
+  text-align: center;
+}
+
+.img-frame {
+  position: relative;
+  border: 2px solid #0c9cfb;
+  padding: 10px;
+  background: #fff;
+  width: 220px;
+  margin: 0 auto;
+}
+
+.img-frame img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display: block;
+}
+
+.member h3 {
+  color: #0c9cfb;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  margin-top: 18px;
+  letter-spacing: 1.5px;
+}
+
+.role {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  color: #444;
+  text-transform: uppercase;
+  margin-top: 6px;
+}
+
+.desc {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+}
+
+.linkedin-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background: #0a66c2;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .team-heading span {
+    letter-spacing: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-wrapper {
+    padding-top: 7.5rem;
+  }
+
+  .member h3 {
+    letter-spacing: 1px;
+  }
+}

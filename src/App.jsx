@@ -3,11 +3,11 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import ForRecruiters from "./components/ForRecruiters";
 import OurProgram from "./components/OurProgram";
+import Team from "./components/Team";
 import Achievements from "./components/Achievements";
 import Alumni from "./components/Alumni";
 import Preloader from "./components/Preloader";
 import Footer from "./components/Footer";
-
 
 function App() {
   const [load, updateLoad] = useState(true);
@@ -43,8 +43,7 @@ function App() {
 
           <section id="home">
             <Home />
-           </section>
-
+          </section>
 
           <section id="for-recruiters">
             <ForRecruiters />
@@ -52,6 +51,10 @@ function App() {
 
           <section id="our-program">
             <OurProgram />
+          </section>
+
+          <section id="team">
+            <Team />
           </section>
 
           <section id="achievements">
@@ -62,8 +65,7 @@ function App() {
             <Alumni />
           </section>
 
-          <Footer/>
-
+          <Footer />
         </>
       )}
     </>
