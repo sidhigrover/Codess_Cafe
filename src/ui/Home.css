@@ -7,7 +7,8 @@
   font-weight: bold;
   padding-top: 9rem;
   padding-bottom: 3rem;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   gap: 4rem;
 }
 .logos img {
@@ -163,5 +164,14 @@
     padding: 0 10%;
     padding-top: 9rem;
     padding-bottom: 3rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1153px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero h1 span {
+    white-space: nowrap;
   }
 }
