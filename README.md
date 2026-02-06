@@ -4,15 +4,18 @@
 
 # Install Bun
 curl -fsSL https://bun.sh/install | bash
+</br>
 source ~/.zshrc
 
 # Clone the repository
-git clone <repo-url>
+git clone "repo-url"
+</br>
 cd Codess_Cafe
 
 # Install dependencies
 bun install
-## If Bun does not found, close VS Code and reopen it.
+</br>
+### If Bun does not found, close VS Code and reopen it.
 
 # Run the development server
 bun run dev
