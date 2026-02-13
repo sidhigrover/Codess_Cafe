@@ -77,6 +77,12 @@ class Navbar extends Component {
             </li>
 
             <li>
+              <a href="https://codess.cafe/" target="_blank" rel="noreferrer">
+                For Mentees
+              </a>
+            </li>
+
+            <li>
               <a
                 href="#our-program"
                 className={activeLink === "program" ? "active" : ""}
