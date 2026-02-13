@@ -192,10 +192,10 @@
 }
 
 .company-oval {
-  width: 360px;
-  height: 200px;
+   width: 280px;
+  height: 160px;
   border: 2px solid #e6396b;
-  border-radius: 50%;
+  border-radius: 10%;
   padding: 30px;
   color: #e6396b;
   display: flex;
@@ -225,7 +225,7 @@
 
 @media (max-width: 768px) {
   .company-oval {
-    width: 300px;
+    width: 240px;
     height: 140px;
   }
   .auto-title {
@@ -235,7 +235,7 @@
 
 @media (max-width: 500px) {
   .company-oval {
-    width: 230px;
+    width: 200px;
     height: 120px;
   }
   .auto-title {
