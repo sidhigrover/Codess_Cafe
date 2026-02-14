@@ -25,7 +25,7 @@ const Home = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="btn primary">Hire Talent for Free</button>
+            <button className="btn primary">Hire Talent — Free</button>
           </a>
         </div>
         {/* Trusted Companies Section */}
