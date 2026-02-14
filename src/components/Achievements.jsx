@@ -13,6 +13,7 @@ const hoverOptions = {
       titleColor: "#fff",
       bodyColor: "#fff",
       cornerRadius: 6,
+      
     },
     legend: {
       display: false,
@@ -35,6 +36,11 @@ const hoverOptionsy = {
       titleColor: "#fff",
       bodyColor: "#fff",
       cornerRadius: 6,
+       callbacks: {
+        label: function (context) {
+          return context.raw + "%";
+        },
+      },
     },
     legend: {
       display: false,
@@ -96,12 +102,12 @@ const Achievements = () => {
     const yearChart = new Chart(yearChartRef.current, {
       type: "bar",
       data: {
-        labels: ["2022", "2023", "2024", "2025"],
+        labels: ["2020","2021","2022", "2023", "2024", "2025"],
         datasets: [
           {
             label: "Offers",
-            data: [54, 189, 254, 312],
-            backgroundColor: "#ec407a",
+            data: [56, 117, 194, 284, 380, 506],
+            backgroundColor: ["#5b2a83","#7a57a8","#9a7ec1","#b87aa8","#d28aa7","#ec407a"],
             borderRadius: 8,
           },
         ],
@@ -112,11 +118,11 @@ const Achievements = () => {
     const campusChart = new Chart(campusChartRef.current, {
       type: "doughnut",
       data: {
-        labels: ["On-campus", "Off-campus"],
+        labels: ["CS and Related","Electronics and Related", "Others"],
         datasets: [
           {
-            data: [36, 64],
-            backgroundColor: ["#ec407a", "#f8bbd0"],
+            data: [41,35,24],
+            backgroundColor: ["#ec407a", "#f8bbd0", "#b39ddb"],
           },
         ],
       },
@@ -124,7 +130,11 @@ const Achievements = () => {
         responsive: true,
         maintainAspectRatio: false,
         plugins: {
-          tooltip: { enabled: true },
+          tooltip: { enabled: true  ,callbacks: {
+        label: function (context) {
+          return context.raw + "%";
+        },
+      },},
           legend: { position: "bottom" },
         },
         interaction: {
@@ -138,14 +148,15 @@ const Achievements = () => {
     const companyChart = new Chart(companyChartRef.current, {
       type: "bar",
       data: {
-        labels: ["Google", "Microsoft", "Amazon"],
+        labels: ["Tier 1", "Tier 2", "Tier 3"],
         datasets: [
           {
             label: "Offers",
-            data: [150, 100, 60],
-            backgroundColor: "#ec407a",
+            data: [21, 36, 43],
+            backgroundColor: ["#d28aa7","#b87aa8","#ec407a"],
             borderRadius: 6,
           },
+          
         ],
       },
       options: hoverOptionsy,
@@ -186,12 +197,12 @@ const Achievements = () => {
         </div>
 
         <div className="graph-card">
-          <h3>Campus Offers</h3>
+          <h3>Academic background (Branch)</h3>
           <canvas ref={campusChartRef}></canvas>
         </div>
 
         <div className="graph-card">
-          <h3>Top Recruiting Companies</h3>
+          <h3>College Tier Diversity</h3>
           <canvas ref={companyChartRef}></canvas>
         </div>
       </div>

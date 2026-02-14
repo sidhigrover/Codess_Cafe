@@ -12,7 +12,7 @@
   gap: 4rem;
 }
 .logos img.google-logo  {
-  width: clamp(30px, 9vw, 50px);
+  width: clamp(20px, 9vw, 50px);
   height: auto;
   object-fit: contain;
 }
