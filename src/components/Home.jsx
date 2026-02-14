@@ -2,6 +2,7 @@ import "../ui/Home.css";
 import rubrik from "../assets/rubrik.png";
 import intuit from "../assets/intuit2.png";
 import ll from "../assets/ll.png";
+import meta from "../assets/meta.png";
 
 const Home = () => {
   return (
@@ -24,16 +25,17 @@ const Home = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="btn primary">Hire Talent</button>
+            <button className="btn primary">Hire Talent for Free</button>
           </a>
         </div>
         {/* Trusted Companies Section */}
         <div className="trusted">
           <p>Trusted by Industry Mentors & Partner Companies</p>
           <div className="logos">
-            <img
-              src="https://img.icons8.com/color/96/microsoft.png"
-              alt="microsoft"
+           <img src={meta} alt="Meta" />
+             <img
+              src="https://img.icons8.com/plasticine/100/google-logo.png"
+              alt="google"
             />
             <img
               src="https://img.icons8.com/color/96/amazon.png"
