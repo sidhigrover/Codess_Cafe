@@ -33,8 +33,8 @@ const Home = () => {
         <div className="trusted">
           <p>Trusted by Industry Mentors & Partner Companies</p>
           <div className="logos">
-           <img src={meta} alt="Meta" />
-             <img src={google} alt="google" className="google-logo" />
+            <img src={meta} alt="Meta" />
+            <img src={google} alt="google" className="google-logo" />
             <img
               src="https://img.icons8.com/color/96/amazon.png"
               alt="amazon"

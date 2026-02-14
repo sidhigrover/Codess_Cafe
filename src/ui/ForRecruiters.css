@@ -192,7 +192,7 @@
 }
 
 .company-oval {
-   width: 200px;
+  width: 200px;
   height: 160px;
   color: #e6396b;
   display: flex;
@@ -200,7 +200,6 @@
   justify-content: center;
   align-items: center;
   transition: transform 0.4s ease;
-
 }
 
 .company-oval img {

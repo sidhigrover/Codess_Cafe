@@ -13,7 +13,6 @@ const hoverOptions = {
       titleColor: "#fff",
       bodyColor: "#fff",
       cornerRadius: 6,
-      
     },
     legend: {
       display: false,
@@ -36,7 +35,7 @@ const hoverOptionsy = {
       titleColor: "#fff",
       bodyColor: "#fff",
       cornerRadius: 6,
-       callbacks: {
+      callbacks: {
         label: function (context) {
           return context.raw + "%";
         },
@@ -67,7 +66,7 @@ const Achievements = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => entry.isIntersecting && setHasStarted(true),
-      { threshold: 0.2 }
+      { threshold: 0.2 },
     );
 
     if (sectionRef.current) observer.observe(sectionRef.current);
@@ -83,10 +82,10 @@ const Achievements = () => {
           num < statsData[i].value
             ? Math.min(
                 num + Math.ceil(statsData[i].value / 20),
-                statsData[i].value
+                statsData[i].value,
               )
-            : num
-        )
+            : num,
+        ),
       );
     }, 50);
 
@@ -102,12 +101,19 @@ const Achievements = () => {
     const yearChart = new Chart(yearChartRef.current, {
       type: "bar",
       data: {
-        labels: ["2020","2021","2022", "2023", "2024", "2025"],
+        labels: ["2020", "2021", "2022", "2023", "2024", "2025"],
         datasets: [
           {
             label: "Offers",
             data: [56, 117, 194, 284, 380, 506],
-            backgroundColor: ["#5b2a83","#7a57a8","#9a7ec1","#b87aa8","#d28aa7","#ec407a"],
+            backgroundColor: [
+              "#5b2a83",
+              "#7a57a8",
+              "#9a7ec1",
+              "#b87aa8",
+              "#d28aa7",
+              "#ec407a",
+            ],
             borderRadius: 8,
           },
         ],
@@ -118,10 +124,10 @@ const Achievements = () => {
     const campusChart = new Chart(campusChartRef.current, {
       type: "doughnut",
       data: {
-        labels: ["CS and Related","Electronics and Related", "Others"],
+        labels: ["CS and Related", "Electronics and Related", "Others"],
         datasets: [
           {
-            data: [41,35,24],
+            data: [41, 35, 24],
             backgroundColor: ["#ec407a", "#f8bbd0", "#b39ddb"],
           },
         ],
@@ -130,11 +136,14 @@ const Achievements = () => {
         responsive: true,
         maintainAspectRatio: false,
         plugins: {
-          tooltip: { enabled: true  ,callbacks: {
-        label: function (context) {
-          return context.raw + "%";
-        },
-      },},
+          tooltip: {
+            enabled: true,
+            callbacks: {
+              label: function (context) {
+                return context.raw + "%";
+              },
+            },
+          },
           legend: { position: "bottom" },
         },
         interaction: {
@@ -153,10 +162,9 @@ const Achievements = () => {
           {
             label: "Offers",
             data: [21, 36, 43],
-            backgroundColor: ["#d28aa7","#b87aa8","#ec407a"],
+            backgroundColor: ["#d28aa7", "#b87aa8", "#ec407a"],
             borderRadius: 6,
           },
-          
         ],
       },
       options: hoverOptionsy,
