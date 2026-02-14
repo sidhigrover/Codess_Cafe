@@ -175,7 +175,7 @@
 }
 
 .auto-scroll-section {
-  background: #fdecec;
+  background: linear-gradient(to bottom, #ffffff 60%, #fdecec 100%);
   padding: 100px 0;
   overflow: hidden;
   text-align: center;
@@ -194,8 +194,6 @@
 .company-oval {
    width: 280px;
   height: 160px;
-  border: 2px solid #e6396b;
-  border-radius: 10%;
   padding: 30px;
   color: #e6396b;
   display: flex;
@@ -203,7 +201,7 @@
   justify-content: center;
   align-items: center;
   transition: transform 0.4s ease;
-  background: white;
+
 }
 
 .company-oval img {

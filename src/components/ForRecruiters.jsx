@@ -73,7 +73,6 @@ const ForRecruiters = () => {
             drag: "free",
             arrows: false,
             pagination: false,
-            gap: "1rem",
             autoWidth: true,
             autoScroll: {
               speed: 1,
