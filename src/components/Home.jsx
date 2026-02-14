@@ -3,6 +3,7 @@ import rubrik from "../assets/rubrik.png";
 import intuit from "../assets/intuit2.png";
 import ll from "../assets/ll.png";
 import meta from "../assets/meta.png";
+import google from "../assets/google.png";
 
 const Home = () => {
   return (
@@ -25,7 +26,7 @@ const Home = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="btn primary">Hire Talent — Free</button>
+            <button className="btn primary">Hire Talent for Free</button>
           </a>
         </div>
         {/* Trusted Companies Section */}
@@ -33,10 +34,7 @@ const Home = () => {
           <p>Trusted by Industry Mentors & Partner Companies</p>
           <div className="logos">
            <img src={meta} alt="Meta" />
-             <img
-              src="https://img.icons8.com/plasticine/100/google-logo.png"
-              alt="google"
-            />
+             <img src={google} alt="google" className="google-logo" />
             <img
               src="https://img.icons8.com/color/96/amazon.png"
               alt="amazon"

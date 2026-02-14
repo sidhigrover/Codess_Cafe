@@ -4,7 +4,7 @@ import myntra from "../assets/myntra.svg";
 import rubrik from "../assets/rubrik.png";
 import airtel from "../assets/airtel.png";
 import intuit from "../assets/intuit.png";
-
+import google from "../assets/google.png";
 
 export const featureData = [
   {
@@ -82,7 +82,7 @@ export const companiesData = [
   },
   {
     name: "Google",
-    logo: "https://img.icons8.com/plasticine/100/google-logo.png",
+    logo: google,
   },
   {
     name: "Rubrik",
