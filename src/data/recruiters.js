@@ -32,18 +32,18 @@ export const featureData = [
 export const pipelineData = [
   {
     "step": "1",
-    "title": "Share Your Hiring Requirements",
-    "desc": "Submit role expectations, skills, experience level, and tech stack needs via Hire Talent form."
+    "title": "Register",
+    "desc": "Fill out our Hire talent form to share your hiring requirements and technical preferences."
   },
   {
     "step": "2",
-    "title": "Codess Curates the Right Talent",
-    "desc": "We shortlist vetted women engineers tailored to your criteria."
+    "title": "Connect",
+    "desc": "Our dedicated team will reach out to discuss your requirements in detail."
   },
   {
     "step": "3",
-    "title": "Interview & Offer",
-    "desc": "We facilitate interviews and provide support through the selection and onboarding process."
+    "title": "Shortlist & Access",
+    "desc": "Gain exclusive access to our Candidate Database of elite engineering talent ready for immediate outreach."
   }
 ];
 
