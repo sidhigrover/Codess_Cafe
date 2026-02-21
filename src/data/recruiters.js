@@ -43,7 +43,7 @@ export const pipelineData = [
   {
     "step": "3",
     "title": "Shortlist & Access",
-    "desc": "Gain exclusive access to our Candidate Database of elite engineering talent ready for immediate outreach."
+    "desc": "Gain exclusive access to our Candidate Database of elite engineering talent."
   }
 ];
 
