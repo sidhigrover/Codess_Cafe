@@ -200,7 +200,7 @@ const Achievements = () => {
       {/* Alumni Section */}
       <div className="graphs-grid">
         <div className="graph-card">
-          <h3>Placement Statistics</h3>
+          <h3>Offers per year</h3>
           <canvas ref={yearChartRef}></canvas>
         </div>
 
