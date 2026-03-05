@@ -1,5 +1,4 @@
 import aarnav from "../assets/aarnav.png";
-import shriya from "../assets/shriya.jpeg";
 import chitra from "../assets/chitra.png";
 import mitali from "../assets/mitali.png";
 
@@ -10,13 +9,6 @@ export const teamData = [
     desc: "Entrepreneur • Kellogg MBA",
     img: aarnav,
     linkedin: "https://www.linkedin.com/in/aarnavjindal/",
-  },
-  {
-    name: "Shriya Chhabra",
-    role: "Founder",
-    desc: "Software Engineer II @ Microsoft",
-    img: shriya,
-    linkedin: "https://www.linkedin.com/in/shriya-chhabra/",
   },
   {
     name: "Chitra Singla",

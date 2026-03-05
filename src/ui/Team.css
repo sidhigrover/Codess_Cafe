@@ -27,19 +27,13 @@
   align-items: start;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 900px) {
   .team-row {
-    grid-template-columns: repeat(4, max-content);
+    grid-template-columns: repeat(3, max-content);
   }
 }
 
-@media (max-width: 1240px) {
-  .team-row {
-    grid-template-columns: repeat(2, max-content);
-  }
-}
-
-@media (max-width: 570px) {
+@media (max-width: 899px) {
   .team-row {
     grid-template-columns: 1fr;
   }
